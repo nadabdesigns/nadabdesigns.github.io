@@ -6,9 +6,20 @@ body{
 	--color--secondary: gold;
 	--color--background: white;
 
-
 }
 
-p{
-	color: tomato
+header{
+	background-color: var(--color--background);
+	padding-block: calc(5* var(--base-size));
+	
+}
+
+.gutters{
+	padding: var(--gutter--size);
+}
+footer {
+ background-color: var(--color--secondary);
+ padding-top: var(--base-size);
+
+
 }
