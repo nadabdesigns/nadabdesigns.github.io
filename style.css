@@ -1,4 +1,4 @@
-body{
+body {
 	--base-size: 12px;
 	--gutter--size: calc(3*var(--base-size));
 
@@ -8,18 +8,26 @@ body{
 
 }
 
-header{
+header {
 	background-color: var(--color--background);
 	padding-block: calc(5* var(--base-size));
-	
+
+}
+#main-content{
+	block-size: 75vh;
+	/* add in more stuff */
+	/* add in more stuff */
 }
 
-.gutters{
+.gutters {
 	padding: var(--gutter--size);
 }
+
 footer {
- background-color: var(--color--secondary);
- padding-top: var(--base-size);
+	background-color: var(--color--secondary);
+	padding-top: var(--base-size);
+	padding-bottom: calc(5 * var(--base-size));
+	;
 
 
 }
