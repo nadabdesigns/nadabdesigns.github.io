@@ -1,33 +1,48 @@
-body {
+:root {
 	--base-size: 16px;
-	--gutter--size: calc(3*var(--base-size));
+	--gutter-size: var(--base-size);
 
 	--color--primary: black;
 	--color--secondary: gold;
-	--color--background: white;
+	--color--background: tomato ;
+
+	font-size: var();
 }
-@media screen and (min-width: 600px)
+
+@media (min-width:600px){
+:root{
+	/* didnt know you could put root inside of a media q */
+	--base-size: 20px;
+	--gutter--size: calc(3*var(--base-size));
+}
+
+}
 
 header {
 	background-color: var(--color--background);
+	/* inline is left and right block is top and botommon */
 	padding-block: calc(5* var(--base-size));
+}
+
+section{
+	block-size: 75vh;
 }
 
 #main-content{
 	block-size: 75vh;
+	padding-top: var(--base-size);
+	padding-bottom: calc(2* var(--base-size));;
 	/* add in more stuff */
 	/* add in more stuff */
-}
-
-.gutters {
-	padding: var(--gutter--size);
 }
 
 footer {
+	padding-top: var(--base-size);
+	padding-inline: var(--gutter--size);
 	background-color: var(--color--secondary);
 	padding-top: var(--base-size);
 	padding-bottom: calc(5 * var(--base-size));
-	;
-
-
+}
+.gutters {
+	padding-inline: var(--gutter--size);
 }
