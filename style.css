@@ -8,6 +8,12 @@
 
 	font-size: var();
 }
+.mobile{
+	display: none;
+}
+.name{
+	display: block;
+}
 
 body {
 	height: 100%;
@@ -17,28 +23,23 @@ body {
 	height: 100vh;
 
 }
+p {
+	font-family: "Funnel Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+.bigContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
 
-@media (min-width:600px) {
-	:root {
-		/* didnt know you could put root inside of a media q */
-		--base-size: 20px;
-		--gutter--size: calc(3*var(--base-size));
-	}
+}
 
-	.bigContainer {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		height: 100%;
+.leftDiv .rightDiv {
 
-	}
-
-	.leftDiv .rightDiv {
-
-		width: 50%;
-		height: 100%;
-
-	}
+	width: 50%;
+	height: 100%;
 
 }
 
@@ -115,7 +116,7 @@ header {
 	padding-block: calc(5* var(--base-size));
 }
 
-.name {}
+
 
 #background {
 	object-fit: cover;
@@ -164,4 +165,134 @@ footer {
 
 .gutters {
 	padding-inline: var(--gutter--size);
+}
+
+@media (min-width: 1440px) and (max-width: 1680px) {
+	.mobile{
+		display: none;
+	}
+	.name{
+		display: block;
+	}
+	
+
+	
+
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		height: 100%;
+		background-color: blue;
+		background-image: none;
+		/* background-image: url("/assets/IMAG0031.JPG");
+	
+		background-size: cover; */
+		height: 100%;
+	
+	}
+	.mobile{
+		display: block;
+	}
+	.name{
+		display:  none;
+	}
+	.grid {
+	display: grid;
+
+	grid-template-columns: repeat(1, 1fr);
+	display: inline-flex;
+	align-items: flex-start;
+	column-gap: 30px;
+
+
+}
+	.top{
+		width: 100%;
+		height: 30vh;
+		/* background-color: bisque; */
+	}
+	.middle{
+		width: 100%;
+		height: 50vh;
+		background-color: aqua;
+		padding: 30px;
+	}
+	.bottom{
+		width: 100%;
+		height: 20vh;
+		/* background-color: red; */
+	}
+	h2{
+		font-size: 50px;
+		padding-bottom: 40px;
+		padding-top: 0px;
+	}
+	p{
+		font-size: 20px;
+	}
+	
+
+}
+
+
+/* SCREEN IS SMALLER THAN 530 PX */
+@media screen and (max-width: 530px) {
+	body {
+		height: 100%;
+		background-color: blue;
+		background-image: none;
+		/* background-image: url("/assets/IMAG0031.JPG");
+	
+		background-size: cover; */
+		height: 100%;
+	
+	}
+	.mobile{
+		display: block;
+	}
+	.name{
+		display:  none;
+	}
+	.top{
+		width: 100%;
+		height: 30vh;
+		/* background-color: bisque; */
+	}
+	.middle{
+		width: 100%;
+		height: 50vh;
+		background-color: aqua;
+		padding: 30px;
+	}
+	.bottom{
+		width: 100%;
+		height: 20vh;
+		/* background-color: red; */
+	}
+	h2{
+		font-size: 30px;
+		padding-bottom: 40px;
+		padding-top: 0px;
+	}
+
+
+
+}
+
+
+
+
+
+
+/* SCREEN IS SMALLER THATN 400 PX */
+
+@media screen and (max-width: 400px) {
+	
+}
+
+/* WHEN SCREEN IS SMALLER THAN 350 PX */
+@media screen and (max-width: 350px) {
+	
+
 }
