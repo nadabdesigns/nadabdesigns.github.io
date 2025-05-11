@@ -8,10 +8,12 @@
 
 	font-size: var();
 }
-.mobile{
+
+.mobile {
 	display: none;
 }
-.name{
+
+.name {
 	display: block;
 }
 
@@ -23,11 +25,13 @@ body {
 	height: 100vh;
 
 }
+
 p {
 	font-family: "Funnel Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
+
 .bigContainer {
 	display: flex;
 	flex-direction: row;
@@ -54,7 +58,7 @@ p {
 	background-image: url("/assets/cow.svg");
 
 	background-size: cover;
-	padding-bottom: 30vh;
+	padding-bottom: 35vh;
 	padding-right: 40px;
 	padding-left: 40px;
 
@@ -94,7 +98,7 @@ h1 {
 	grid-template-columns: repeat(3, 1fr);
 	display: inline-flex;
 	align-items: flex-start;
-	column-gap: 30px;
+	column-gap: 35px;
 
 
 }
@@ -165,73 +169,99 @@ footer {
 
 .gutters {
 	padding-inline: var(--gutter--size);
+
+
 }
 
+/* tablet sizes */
 @media (min-width: 1440px) and (max-width: 1680px) {
-	.mobile{
+	.mobile {
 		display: none;
 	}
-	.name{
+
+	.name {
 		display: block;
 	}
-	
 
-	
+	img {
+		width: 30px;
+		height: auto;
+	}
+
+
+
+
 
 }
 
 @media screen and (max-width: 600px) {
 	body {
 		height: 100%;
-		background-color: blue;
-		background-image: none;
-		/* background-image: url("/assets/IMAG0031.JPG");
+		/* background-color: blue; */
+		/* background-image: none;
+		background-image: url("/assets/cow_mobile.jpg");
 	
-		background-size: cover; */
-		height: 100%;
-	
+		background-size: cover;
+		height: 100%; */
+
 	}
-	.mobile{
+
+	.words {
+		margin-top: 50px;
+	}
+
+	.mobile {
 		display: block;
 	}
-	.name{
-		display:  none;
+
+	.name {
+		display: none;
 	}
+
 	.grid {
-	display: grid;
+		display: grid;
 
-	grid-template-columns: repeat(1, 1fr);
-	display: inline-flex;
-	align-items: flex-start;
-	column-gap: 30px;
-
-
-}
-	.top{
-		width: 100%;
-		height: 30vh;
-		/* background-color: bisque; */
+		grid-template-columns: repeat(1, 1fr);
+		display: inline-flex;
+		align-items: flex-start;
+		column-gap: 30px;
 	}
-	.middle{
+	
+
+	.top {
 		width: 100%;
-		height: 50vh;
-		background-color: aqua;
+		height: 35vh;
+		/* background-color: bisque; */
+		font-size: 200px;
+		font-family: "Zen Dots";
+		color: #ffffff;
+		align-items: center;
+		text-align: center;
+	}
+
+	.middle {
+		width: 100%;
+		height: 60vh;
+		/* background-color: aqua; */
 		padding: 30px;
 	}
-	.bottom{
+
+	.bottom {
 		width: 100%;
-		height: 20vh;
+		height: 5vh;
 		/* background-color: red; */
 	}
-	h2{
+
+	h2 {
 		font-size: 50px;
 		padding-bottom: 40px;
 		padding-top: 0px;
 	}
-	p{
+
+	p {
 		font-size: 20px;
 	}
-	
+
 
 }
 
@@ -240,38 +270,50 @@ footer {
 @media screen and (max-width: 530px) {
 	body {
 		height: 100%;
-		background-color: blue;
+		/* background-color: blue; */
 		background-image: none;
-		/* background-image: url("/assets/IMAG0031.JPG");
-	
-		background-size: cover; */
+		background-image: url("/assets/cow_mobile.jpg");
+		background-size: cover;
 		height: 100%;
-	
+
 	}
-	.mobile{
+
+	.middle {
+		height: 100%;
+		/* background-color: blue; */
+		background-image: none;
+		background-image: url("/assets/mobile.svg");
+
+		background-size: cover;
+		height: 100%;
 		display: block;
 	}
-	.name{
-		display:  none;
+
+	.name {
+		display: none;
 	}
-	.top{
+
+	.top {
 		width: 100%;
-		height: 30vh;
+		height: 35vh;
 		/* background-color: bisque; */
 	}
-	.middle{
+
+	.middle {
 		width: 100%;
-		height: 50vh;
-		background-color: aqua;
-		padding: 30px;
+		height: 60vh;
+		/* background-color: aqua; */
+		padding: 35px;
 	}
-	.bottom{
+
+	.bottom {
 		width: 100%;
-		height: 20vh;
+		height: 5vh;
 		/* background-color: red; */
 	}
-	h2{
-		font-size: 30px;
+
+	h2 {
+		font-size: 35px;
 		padding-bottom: 40px;
 		padding-top: 0px;
 	}
@@ -287,12 +329,7 @@ footer {
 
 /* SCREEN IS SMALLER THATN 400 PX */
 
-@media screen and (max-width: 400px) {
-	
-}
+@media screen and (max-width: 400px) {}
 
 /* WHEN SCREEN IS SMALLER THAN 350 PX */
-@media screen and (max-width: 350px) {
-	
-
-}
+@media screen and (max-width: 350px) {}
