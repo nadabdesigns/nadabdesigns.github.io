@@ -13,8 +13,8 @@ manuscript.addEventListener('mouseover', (e) => {
 	console.log(background)
 	text.textContent = '01';
 	text.style.color = 'black';
-	e.target.style.background = 'black';
-	e.target.style.color = 'white';
+	// e.target.style.background = 'black';
+	e.target.style.color = 'purple';
 
 })
 manuscript.addEventListener('mouseout', (e) => {
@@ -23,7 +23,7 @@ manuscript.addEventListener('mouseout', (e) => {
 	// big text color
 	e.target.style.color = 'black'
 	// small text syle
-	e.target.style.background = '';
+	e.target.style.background = 'none';
 	
 	text.style.color = 'white';
 	text.textContent = '00'
