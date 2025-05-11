@@ -237,6 +237,8 @@ footer {
 		color: #ffffff;
 		align-items: center;
 		text-align: center;
+		justify-content: center;
+		display: flex;
 	}
 
 	.middle {
@@ -313,7 +315,7 @@ footer {
 	}
 
 	h2 {
-		font-size: 35px;
+		font-size: 30px;
 		padding-bottom: 40px;
 		padding-top: 0px;
 	}
