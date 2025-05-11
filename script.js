@@ -1,3 +1,4 @@
+// on hover stuff for text
 let manuscript = document.getElementById('01')
 let spread = document.getElementById('02')
 let binding = document.getElementById('03')
@@ -7,14 +8,14 @@ let functions = document.getElementById('05')
 let background = document.getElementsByTagName('body')[0]
 let text = document.getElementById('01text')
 
-
+// on hover suff for text
 manuscript.addEventListener('mouseover', (e) => {
 	background.style.backgroundImage = "url('assets/desktop/01.png')";
 	console.log(background)
 	text.textContent = '01';
-	text.style.color = 'black';
+	// text.style.color = 'white';
 	// e.target.style.background = 'black';
-	// e.target.style.color = 'purple';
+	e.target.style.color = 'white';
 
 })
 manuscript.addEventListener('mouseout', (e) => {
@@ -23,9 +24,9 @@ manuscript.addEventListener('mouseout', (e) => {
 	// big text color
 	e.target.style.color = 'black'
 	// small text syle
-	e.target.style.background = 'none';
+	// e.target.style.background = 'none';
 	
-	text.style.color = 'white';
+	// text.style.color = 'white';
 	text.textContent = '00'
 })
 spread.addEventListener('mouseover', (e) => {
