@@ -1,3 +1,5 @@
+// on hovor svg 
+let svgimg = document.getElementById('svgbk')
 // on hover stuff for text
 let manuscript = document.getElementById('01')
 let spread = document.getElementById('02')
@@ -8,14 +10,17 @@ let functions = document.getElementById('05')
 let background = document.getElementsByTagName('body')[0]
 let text = document.getElementById('01text')
 
+
 // on hover suff for text
 manuscript.addEventListener('mouseover', (e) => {
 	background.style.backgroundImage = "url('assets/desktop/01.png')";
 	console.log(background)
 	text.textContent = '01';
-	// text.style.color = 'white';
+	text.style.color = 'black';
 	// e.target.style.background = 'black';
 	e.target.style.color = 'white';
+	// backgroun change
+	svgimg.backgroundImage = "url('assets/desktop/01.png')";
 
 })
 manuscript.addEventListener('mouseout', (e) => {
