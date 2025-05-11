@@ -9,7 +9,7 @@
 	font-size: var();
 }
 
-.mobile {
+#mobile {
 	display: none;
 }
 
@@ -175,7 +175,7 @@ footer {
 
 /* tablet sizes */
 @media (min-width: 1440px) and (max-width: 1680px) {
-	.mobile {
+	#mobile {
 		display: none;
 	}
 
@@ -187,6 +187,7 @@ footer {
 		width: 30px;
 		height: auto;
 	}
+
 
 
 
@@ -210,7 +211,7 @@ footer {
 		margin-top: 50px;
 	}
 
-	.mobile {
+	#mobile {
 		display: block;
 	}
 
