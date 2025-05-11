@@ -174,29 +174,10 @@ footer {
 }
 
 /* tablet sizes */
-@media (min-width: 1440px) and (max-width: 1680px) {
-	#mobile {
-		display: none;
-	}
+@media screen and (max-width: 1050px) {
 
-	.name {
-		display: block;
-	}
-
-	img {
-		width: 30px;
-		height: auto;
-	}
-
-
-
-
-
-
-}
-
-@media screen and (max-width: 600px) {
 	body {
+		background-image: url("/assets/cow_mobile.jpg");
 		height: 100%;
 		/* background-color: blue; */
 		/* background-image: none;
@@ -213,6 +194,7 @@ footer {
 
 	#mobile {
 		display: block;
+		
 	}
 
 	.name {
@@ -240,14 +222,108 @@ footer {
 		text-align: center;
 		justify-content: center;
 		display: flex;
+		background-image: none;
 	}
 
 	.middle {
-		width: 100%;
-		height: 60vh;
-		/* background-color: aqua; */
-		padding: 30px;
+		height: 100%;
+		/* background-color: blue; */
+	
+		background-image: url("/assets/mobile.svg");
+		background-size: cover;
+		height: 100%;
+		display: block;
+		padding: 35px;
+	
 	}
+
+
+	.bottom {
+		width: 100%;
+		height: 5vh;
+		/* background-color: red; */
+	}
+
+	h2 {
+		font-size: 50px;
+		padding-bottom: 40px;
+		padding-top: 0px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		height: 100%;
+		/* background-color: blue; */
+		/* background-image: none;
+		background-image: url("/assets/cow_mobile.jpg");
+	
+		background-size: cover;
+		height: 100%; */
+
+	}
+
+	.words {
+		margin-top: 50px;
+	}
+
+	#mobile {
+		display: block;
+		
+	}
+
+	.name {
+		display: none;
+	}
+
+	.grid {
+		display: grid;
+
+		grid-template-columns: repeat(1, 1fr);
+		display: inline-flex;
+		align-items: flex-start;
+		column-gap: 30px;
+	}
+	
+
+	.top {
+		width: 100%;
+		height: 35vh;
+		/* background-color: bisque; */
+		font-size: 200px;
+		font-family: "Zen Dots";
+		color: #ffffff;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		display: flex;
+		background-image: none;
+	}
+
+	.middle {
+		height: 100%;
+		/* background-color: blue; */
+		
+		background-image: url("/assets/mobile.svg");
+		background-size: cover;
+		height: 100%;
+		display: block;
+		padding: 35px;
+	
+	}
+
 
 	.bottom {
 		width: 100%;

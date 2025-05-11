@@ -1,3 +1,9 @@
+let hover = addEventListener
+
+
+
+
+
 function change() {
 	document.getElementById("mobile").style.backgroundImage = "url('/assets/mobile/01')";
   }
