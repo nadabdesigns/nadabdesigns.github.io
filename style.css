@@ -205,7 +205,7 @@ footer {
 	}
 
 }
-@media (min-width: 744px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
 	.bigContainer {
 		display: flex;
 		flex-direction: row;
@@ -224,7 +224,7 @@ footer {
 }
 
 /* tablet sizes */
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 600px) {
 	#numb{
 		/* transition: color 1s ease-in-out; */
 		font-family: "Zen Dots";
