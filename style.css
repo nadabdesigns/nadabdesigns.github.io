@@ -206,9 +206,9 @@ footer {
 /* tablet sizes */
 @media screen and (max-width: 1050px) {
 	#numb{
-		transition: color 1s ease-in-out;
+		/* transition: color 1s ease-in-out; */
 		font-family: "Zen Dots";
-		font-size: 200px;
+		font-size: 150px;
 		
 
 	}
@@ -235,7 +235,7 @@ footer {
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		transition: background-image .1s ease-in-out;
+		/* transition: background-image .1s ease-in-out; */
 	  }
 
 	.name {
@@ -253,10 +253,11 @@ footer {
 	
 
 	.top {
+		
 		width: 100%;
-		height: 35vh;
+		height: 30vh;
 		/* background-color: bisque; */
-		font-size: 200px;
+		font-size: 190px;
 		font-family: "Zen Dots";
 		color: #ffffff;
 		align-items: center;
@@ -267,7 +268,7 @@ footer {
 	}
 
 	.middle {
-		height: 100%;
+		height: 30vh;
 		/* background-color: blue; */
 	
 		background-image: url("/assets/mobile.svg");
@@ -322,7 +323,7 @@ footer {
 
 	#mobile {
 		display: block;
-		transition: background-image 1s ease-in-out;
+		/* transition: background-image 1s ease-in-out; */
 		
 	}
 
@@ -342,7 +343,7 @@ footer {
 
 	.top {
 		width: 100%;
-		height: 35vh;
+		height: 30vh;
 		/* background-color: bisque; */
 		font-size: 200px;
 		font-family: "Zen Dots";
@@ -360,7 +361,7 @@ footer {
 		
 		background-image: url("/assets/mobile.svg");
 		background-size: cover;
-		height: 100%;
+	
 		display: block;
 		padding: 35px;
 	
@@ -450,7 +451,17 @@ footer {
 
 /* SCREEN IS SMALLER THATN 400 PX */
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+	.top #numb {
+		font-size: 170px;
+	  }
+}
 
 /* WHEN SCREEN IS SMALLER THAN 350 PX */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+	.top #numb {
+		font-size: 110px !important;
+		
+	  }
+
+}
