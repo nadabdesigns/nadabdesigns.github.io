@@ -9,22 +9,24 @@ let functions = document.getElementById('05');
 let background = document.getElementsByTagName('body')[0];
 let text = document.getElementById('01text');
 
-// --- Manuscript ---
+// manuscript
 manuscript.addEventListener('mouseover', () => {
 	background.style.backgroundImage = "url('assets/desktop/01.png')";
+	
 	text.textContent = '01';
 	text.style.color = 'white';
 	svgbk.style.backgroundImage = "url('assets/blank.svg')";
 });
 
 manuscript.addEventListener('mouseout', () => {
+	svgbk.style.backgroundImage = "url('assets/cow.svg')";
 	background.style.backgroundImage = "url('assets/IMAG0031.jpg')";
 	text.style.color = 'white';
 	text.textContent = '00';
-	svgbk.style.backgroundImage = "url('assets/cow.svg')";
+	
 });
 
-// --- Spread ---
+// spread
 spread.addEventListener('mouseover', () => {
 	background.style.backgroundImage = "url('assets/desktop/02.png')";
 	text.textContent = '02';
@@ -37,7 +39,7 @@ spread.addEventListener('mouseout', () => {
 	text.textContent = '00';
 });
 
-// --- Binding ---
+// binding
 binding.addEventListener('mouseover', () => {
 	background.style.backgroundImage = "url('assets/desktop/03.png')";
 	text.textContent = '03';
@@ -56,7 +58,7 @@ binding.addEventListener('mouseout', () => {
 	svgarrow.src = 'assets/Arrow.svg';
 });
 
-// --- Links ---
+//links
 links.addEventListener('mouseover', () => {
 	background.style.backgroundImage = "url('assets/desktop/04.png')";
 	text.textContent = '04';
@@ -75,7 +77,7 @@ links.addEventListener('mouseout', () => {
 	svgarrow.src = 'assets/Arrow.svg';
 });
 
-// --- Functions ---
+//Functions 
 functions.addEventListener('mouseover', () => {
 	background.style.backgroundImage = "url('assets/desktop/05.png')";
 	text.textContent = '05';
