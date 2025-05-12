@@ -9,6 +9,25 @@ let functions = document.getElementById('05');
 let background = document.getElementsByTagName('body')[0];
 let text = document.getElementById('01text');
 
+
+
+function resetBackground() {
+	background.style.backgroundImage = "url('assets/cowOff.jpg')";
+	text.textContent = '00';
+	text.style.color = 'white';
+	text.style.mixBlendMode = 'normal';
+	svgbk.style.backgroundImage = "url('assets/cow.svg')";
+	textchange.style.color = 'black';
+	svgarrow.src = 'assets/Arrow.svg';
+}
+
+// trying to overide mouse out
+manuscript.addEventListener('mouseout', resetBackground);
+spread.addEventListener('mouseout', resetBackground);
+binding.addEventListener('mouseout', resetBackground);
+links.addEventListener('mouseout', resetBackground);
+functions.addEventListener('mouseout', resetBackground);
+
 // manuscript
 manuscript.addEventListener('mouseover', () => {
 	background.style.backgroundImage = "url('assets/desktop/01.png')";
@@ -19,8 +38,8 @@ manuscript.addEventListener('mouseover', () => {
 });
 
 manuscript.addEventListener('mouseout', () => {
-	svgbk.style.backgroundImage = "url('/assets/cow.svg')";
-	background.style.backgroundImage = "url('assets/cowOff.jpg')";
+	svgbk.style.backgroundImage = "url('assets/cow.svg')";
+	background.style.backgroundImage = "url('../assets/cowOff.jpg')";
 	text.style.color = 'white';
 	text.textContent = '00';
 	
@@ -93,22 +112,7 @@ functions.addEventListener('mouseout', () => {
 	text.style.mixBlendMode = 'normal';
 });
 
-function resetBackground() {
-	background.style.backgroundImage = "url('assets/cowOff.jpg')";
-	text.textContent = '00';
-	text.style.color = 'white';
-	text.style.mixBlendMode = 'normal';
-	svgbk.style.backgroundImage = "url('assets/cow.svg')";
-	textchange.style.color = 'black';
-	svgarrow.src = 'assets/Arrow.svg';
-}
 
-// Then just call this on all mouseout:
-manuscript.addEventListener('mouseout', resetBackground);
-spread.addEventListener('mouseout', resetBackground);
-binding.addEventListener('mouseout', resetBackground);
-links.addEventListener('mouseout', resetBackground);
-functions.addEventListener('mouseout', resetBackground);
 
 
 
