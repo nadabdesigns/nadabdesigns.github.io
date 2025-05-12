@@ -12,7 +12,9 @@
 
 #mobile {
 	display: none;
+	
 }
+
 
 .name {
 	display: block;
@@ -189,6 +191,12 @@ footer {
 
 /* tablet sizes */
 @media screen and (max-width: 1050px) {
+	#numb{
+		transition: color 1s ease-in-out;
+		font-family: "Zen Dots";
+		font-size: 200px;
+
+	}
 
 	body {
 		background-image: url("/assets/cow_mobile.jpg");
@@ -208,9 +216,12 @@ footer {
 	}
 
 	#mobile {
-		display: block;
-		
-	}
+		display:block;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		transition: background-image .1s ease-in-out;
+	  }
 
 	.name {
 		display: none;
@@ -296,6 +307,7 @@ footer {
 
 	#mobile {
 		display: block;
+		transition: background-image 1s ease-in-out;
 		
 	}
 
