@@ -31,7 +31,7 @@ manuscript.addEventListener('mouseout', (e) => {
 	text.style.color = 'white';
 
 	text.textContent = '00'
-	// svgbk.stylebackgroundImage = "url('assets/cow.svg')";
+	svgbk.stylebackgroundImage = "url('assets/cow.svg')";
 })
 spread.addEventListener('mouseover', (e) => {
 	background.style.backgroundImage = "url('assets/desktop/02.png')";
