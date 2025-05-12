@@ -93,6 +93,23 @@ functions.addEventListener('mouseout', () => {
 	text.style.mixBlendMode = 'normal';
 });
 
+function resetBackground() {
+	background.style.backgroundImage = "url('assets/cowOff.jpg')";
+	text.textContent = '00';
+	text.style.color = 'white';
+	text.style.mixBlendMode = 'normal';
+	svgbk.style.backgroundImage = "url('assets/cow.svg')";
+	textchange.style.color = 'black';
+	svgarrow.src = 'assets/Arrow.svg';
+}
+
+// Then just call this on all mouseout:
+manuscript.addEventListener('mouseout', resetBackground);
+spread.addEventListener('mouseout', resetBackground);
+binding.addEventListener('mouseout', resetBackground);
+links.addEventListener('mouseout', resetBackground);
+functions.addEventListener('mouseout', resetBackground);
+
 
 
 
