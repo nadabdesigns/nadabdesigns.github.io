@@ -188,7 +188,7 @@ footer {
 
 
 }
-@media (min-width: 1440px) and (max-width: 1680px) {
+@media (min-width: 1000px) and (max-width: 1680px) {
 	.bigContainer {
 		display: flex;
 		flex-direction: row;
@@ -199,16 +199,37 @@ footer {
 	#mobile{
 		display:none
 	}
+	h2 {
+		font-size: 50px;
 
+	}
+
+}
+@media (min-width: 744px) and (max-width: 1000px) {
+	.bigContainer {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 100%;
+	
+	}
+	#mobile{
+		display:none
+	}
+	h2 {
+		font-size: 30px;
+
+	}
 
 }
 
 /* tablet sizes */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 744px) {
 	#numb{
 		/* transition: color 1s ease-in-out; */
 		font-family: "Zen Dots";
 		font-size: 150px;
+		background-size: cover;
 		
 
 	}
