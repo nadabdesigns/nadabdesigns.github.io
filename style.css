@@ -9,6 +9,7 @@
 	font-size: var();
 }
 
+
 #mobile {
 	display: none;
 }
@@ -24,6 +25,11 @@ body {
 	background-size: cover;
 	height: 100vh;
 
+}
+#svgarrow{
+	height: 50px;
+	width: auto;
+   
 }
 
 p {
@@ -73,7 +79,7 @@ p:hover{
 }
 
 h2 {
-	color: #000;
+	/* color: #000; */
 
 	font-family: "Zen Dots";
 	font-size: 70px;

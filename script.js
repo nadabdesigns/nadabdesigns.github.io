@@ -1,5 +1,8 @@
 // on hovor svg 
-let svgimg = document.getElementById('svgbk')
+let svgbk = document.getElementById('svgbk')
+let svgarrow = document.getElementById('svgarrow')
+// text color left div
+let textchange = document.getElementById('textcolor')
 // on hover stuff for text
 let manuscript = document.getElementById('01')
 let spread = document.getElementById('02')
@@ -16,23 +19,19 @@ manuscript.addEventListener('mouseover', (e) => {
 	background.style.backgroundImage = "url('assets/desktop/01.png')";
 	console.log(background)
 	text.textContent = '01';
-	text.style.color = 'black';
-	// e.target.style.background = 'black';
-	e.target.style.color = 'white';
-	// backgroun change
-	svgimg.backgroundImage = "url('assets/desktop/01.png')";
+	text.style.color = 'white';
+	// background change
+	svgbk.style.backgroundImage = "url('assets/blank.svg')";
 
 })
 manuscript.addEventListener('mouseout', (e) => {
-	// background image
 	background.style.backgroundImage = "url('assets/IMAG0031.jpg')";
-	// big text color
-	e.target.style.color = 'black'
-	// small text syle
-	// e.target.style.background = 'none';
 	
-	// text.style.color = 'white';
+	// e.target.style.color = 'black'
+	text.style.color = 'white';
+	
 	text.textContent = '00'
+	// svgbk.stylebackgroundImage = "url('assets/cow.svg')";
 })
 spread.addEventListener('mouseover', (e) => {
 	background.style.backgroundImage = "url('assets/desktop/02.png')";
@@ -40,10 +39,12 @@ spread.addEventListener('mouseover', (e) => {
 	text.textContent = '02';
 	text.style.color = 'black';
 	// e.target.style.color = 'purple';
+	
 
 })
 spread.addEventListener('mouseout', (e) => {
 	background.style.backgroundImage = "url('assets/IMAG0031.jpg')";
+	
 	// e.target.style.color = 'black'
 	text.style.color = 'white';
 	text.textContent = '00'
@@ -53,28 +54,42 @@ binding.addEventListener('mouseover', (e) => {
 	console.log(background)
 	text.textContent = '03';
 	text.style.color = 'white';
+	svgbk.style.backgroundImage = "url('assets/red.svg')";
+	textchange.style.color = 'white';
+	svgarrow.src = 'assets/Arrowwhite.svg';
+	//
+	// 
 	// e.target.style.color = 'purple';
 
 })
 binding.addEventListener('mouseout', (e) => {
 	background.style.backgroundImage = "url('assets/IMAG0031.jpg')";
+	svgbk.style.backgroundImage = "url('assets/cow.svg')";
 	// e.target.style.color = 'black'
 	text.style.color = 'white';
 	text.textContent = '00'
+	textchange.style.color = 'black';
+	svgarrow.src = 'assets/Arrow.svg';
 })
 links.addEventListener('mouseover', (e) => {
 	background.style.backgroundImage = "url('assets/desktop/04.png')";
 	console.log(background)
 	text.textContent = '04';
 	text.style.color = 'black';
+	svgbk.style.backgroundImage = "url('assets/yellow.svg')";
+	textchange.style.color = 'black';
+	svgarrow.src = 'assets/Arrow.svg';
 	// e.target.style.color = 'purple';
 
 })
 links.addEventListener('mouseout', (e) => {
 	background.style.backgroundImage = "url('assets/IMAG0031.jpg')";
-	// e.target.style.color = 'black'
+	console.log(background)
+	text.textContent = '00';
 	text.style.color = 'white';
-	text.textContent = '00'
+	svgbk.style.backgroundImage = "url('assets/cow.svg')";
+	textchange.style.color = 'black';
+	svgarrow.src = 'assets/Arrow.svg';
 })
 functions.addEventListener('mouseover', (e) => {
 	background.style.backgroundImage = "url('assets/desktop/05.png')";
@@ -82,6 +97,7 @@ functions.addEventListener('mouseover', (e) => {
 	text.textContent = '05';
 	text.style.color = 'white';
 	text.style.mixBlendMode = 'exclusion';
+	svgbk.style.backgroundImage = "url('assets/blank.svg')";
 	// e.target.style.color = 'purple';
 
 })
