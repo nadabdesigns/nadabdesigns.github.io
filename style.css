@@ -188,6 +188,9 @@ footer {
 
 
 }
+@media (min-width: 1440px) and (max-width: 1680px) {
+	
+}
 
 /* tablet sizes */
 @media screen and (max-width: 1050px) {
