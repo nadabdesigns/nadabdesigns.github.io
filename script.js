@@ -20,7 +20,7 @@ manuscript.addEventListener('mouseover', () => {
 
 manuscript.addEventListener('mouseout', () => {
 	svgbk.style.backgroundImage = "url('/assets/cow.svg')";
-	background.style.backgroundImage = "url('../assets/IMAG0031.jpg')";
+	background.style.backgroundImage = "url('assets/cowOff.jpg')";
 	text.style.color = 'white';
 	text.textContent = '00';
 	
@@ -34,7 +34,7 @@ spread.addEventListener('mouseover', () => {
 });
 
 spread.addEventListener('mouseout', () => {
-	background.style.backgroundImage = "url('../assets/IMAG0031.jpg')";
+	background.style.backgroundImage = "url('assets/cowOff.jpg')";
 	text.style.color = 'white';
 	text.textContent = '00';
 });
@@ -50,7 +50,7 @@ binding.addEventListener('mouseover', () => {
 });
 
 binding.addEventListener('mouseout', () => {
-	background.style.backgroundImage = "url('../assets/IMAG0031.jpg')";
+	background.style.backgroundImage = "url('assets/cowOff.jpg')";
 	svgbk.style.backgroundImage = "url('assets/cow.svg')";
 	text.style.color = 'white';
 	text.textContent = '00';
@@ -69,7 +69,7 @@ links.addEventListener('mouseover', () => {
 });
 
 links.addEventListener('mouseout', () => {
-	background.style.backgroundImage = "url('assets/IMAG0031.jpg')";
+	background.style.backgroundImage = "url('assets/cowOff.jpg')";
 	text.textContent = '00';
 	text.style.color = 'white';
 	svgbk.style.backgroundImage = "url('assets/cow.svg')";
